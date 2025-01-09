@@ -1,1 +1,18 @@
-192.168.2.194
+[ubuntuVM1]
+192.168.2.194 ansible_user=vagrant
+[windows]
+windows20 ansible_host=192.168.1.94
+
+[windows:vars]
+ansible_user=vagrant
+ansible_password=vagrant
+ansible_connection=winrm
+ansible_winrm_transport=basic
+ansible_port=5986
+ansible_winrm_server_cert_validation=ignore
+ansible_become_method=runas
+ansible_become_user=SYSTEM
+
+[web_servers]
+windows2022 
+ubuntu2022
