@@ -1,5 +1,5 @@
 [ubuntuVM1]
-ubuntu ansible_host=192.168.1.148
+ubuntu ansible_host=192.168.2.194
 
 [windowsPC]
 windowspc ansible_host=192.168.2.176
